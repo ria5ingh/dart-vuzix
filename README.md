@@ -2,8 +2,7 @@
 
 **Repository Structure:**
 
-**Dumps/**
-- Initial log dumps collected with `adb logcat -d`
+**Dumps/** (Initial log dumps collected with `adb logcat -d`)
 
 **Logcat/**
 - Youtube/
