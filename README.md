@@ -2,21 +2,20 @@
 
 **Repository Structure:**
 
-The following details what events occurred during log collection/tracing. Most Perfetto folders have both a .pftrace and .systrace file, either contained in the folder itself or in a .zip file, along with its config file. 
-
 **Dumps/**
 - Initial log dumps collected with `adb logcat -d`
 
 **Logcat/**
-- **Youtube/:** searched "youtube.com" using Vuzix browser app. This can be seen in the logs with events that have "chromium.webview_shell"
-- **BrowserDownload/:** searched the dart lab website on the Vuzix browser, downloaded mirage.pdf, opened mirage.pdf through downloads, opening a native PDFviewer app. The PDFviewer app uses headtracking, which does not show in logcat, but shows in sensorservice dump (“sensor_dump.txt”). 
-- **Idle/:** scrolled through system settings, adjusted brightness, then left glasses idle
-- **Camera App/:** opened and used the camera app, captured a picture
+- **Youtube/:** 
+- **BrowserDownload/:** 
+- **Idle/:**
+- **Camera App/:** 
 
 **Perfetto/**
-- **PDFViewer1 & PDFViewer2/:** both folders include trace files ran while opening the PDFviewer on the Vuzix. In PDFViewer1, Process 3841 (hud.pdfviewer process) syncs with the SensorService 1443 for the amount of time the PDFviewer was active. 
-- **QRCode Scanner/:** scanned a QR code from an image, opening a website in the Vuzix browser
-- **TeamViewerApp/:** started a remote call on TeamViewer to the Vuzix glasses and shared a pdf file over the call, which downloaded on the glasses. 
+- **PDFViewer1**
+- **PDFViewer2/:** 
+- **QRCode Scanner/:** 
+- **TeamViewerApp/:** 
 
 ### Initial Log Collection and Environment Setup
 The first stage of the project focused on setting up logging tools and understanding how much system information could be collected from the Vuzix M4000 smart glasses. Using Android Debug Bridge (ADB), multiple `logcat` sessions were collected under both idle and active device conditions. Initial tests included:
