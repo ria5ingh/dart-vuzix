@@ -6,16 +6,16 @@
 - Initial log dumps collected with `adb logcat -d`
 
 **Logcat/**
-- **Youtube/:** 
-- **BrowserDownload/:** 
-- **Idle/:**
-- **Camera App/:** 
+- Youtube/
+- BrowserDownload/
+- Idle/
+- Camera App/ 
 
 **Perfetto/**
-- **PDFViewer1**
-- **PDFViewer2/:** 
-- **QRCode Scanner/:** 
-- **TeamViewerApp/:** 
+- PDFViewer1/
+- PDFViewer2/
+- QRCode Scanner/
+- TeamViewerApp/ 
 
 ### Initial Log Collection and Environment Setup
 The first stage of the project focused on setting up logging tools and understanding how much system information could be collected from the Vuzix M4000 smart glasses. Using Android Debug Bridge (ADB), multiple `logcat` sessions were collected under both idle and active device conditions. Initial tests included:
